@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @SukoonT
-- 👀 I’m interested in JS nodeJS reactJS css3 scss html5 canvas python
-- 🌱 I’m currently learning reactJS nodeJS
+- 👀 I’m know JS nodeJS reactJS css3 scss html5 canvas(2d) python(a bit)
+- 🌱 I’m currently learning reactJS nodeJS canvas(webgl)
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me sukoonkumar2@gmail.com
 
