@@ -4,7 +4,7 @@
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me sukoonkumar2@gmail.com
 
-[![GitHub stats](https://github-readme-stats.vercel.app/api?username=sukoont&theme=radical&show_icons=true)]
-[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=sukoont)]
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sukoont&layout=compact&theme=radical)]
+<img align="center" src="https://github-readme-stats.vercel.app/api?username=sukoont&theme=radical&show_icons=true"/>
+<img align="center" src="https://github-readme-stats.vercel.app/api/wakatime?username=sukoont"/>
+<img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sukoont&layout=compact&theme=radical"/>
 
