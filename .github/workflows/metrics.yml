@@ -22,7 +22,7 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.sponsorships.svg
-          token: ${{ secrets.METRICS_TOKEN_PERSONAL }}
+          token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_sponsorships: yes
       - name: Full-year calendar
@@ -49,7 +49,7 @@ jobs:
           plugin_stargazers: yes
           plugin_stargazers_charts: no
           plugin_stargazers_worldmap: yes
-          plugin_stargazers_worldmap_token: ${{ secrets.GOOGLE_MAP_TOKEN }}
+          plugin_stargazers_worldmap_token: ${{ secrets.METRICS_TOKEN }}
           plugin_stargazers_worldmap_sample: 200
       - name: Indepth analysis
         uses: lowlighter/metrics@latest
