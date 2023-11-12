@@ -18,3 +18,50 @@ jobs:
           repo: yomikiru
           plugin_people: yes
           plugin_people_types: contributors, sponsors
+      - name: 💝 GitHub Sponsorships
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.sponsorships.svg
+          token: ${{ secrets.METRICS_TOKEN_PERSONAL }}
+          base: ""
+          plugin_sponsorships: yes
+      - name: Full-year calendar
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.isocalendar.fullyear.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+      - name: stargazer classic charts
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.stargazers.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_stargazers: yes
+      - name: stargazer worldmap
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.stargazers.worldmap.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_stargazers: yes
+          plugin_stargazers_charts: no
+          plugin_stargazers_worldmap: yes
+          plugin_stargazers_worldmap_token: ${{ secrets.GOOGLE_MAP_TOKEN }}
+          plugin_stargazers_worldmap_sample: 200
+      - name: Indepth analysis
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.languages.indepth.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_languages: yes
+          plugin_languages_ignored: >-
+            html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell,
+            gnuplot
+          plugin_languages_indepth: yes
+          plugin_languages_details: lines, bytes-size
+          plugin_languages_limit: 6
+          plugin_languages_analysis_timeout: 15
