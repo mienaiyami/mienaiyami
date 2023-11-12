@@ -18,13 +18,15 @@ jobs:
           repo: yomikiru
           plugin_people: yes
           plugin_people_types: contributors, sponsors
-      - name: 💝 GitHub Sponsorships
+      - name: Sponsors goal
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.sponsorships.svg
-          token: ${{ secrets.METRICS_TOKEN }}
+          filename: metrics.plugin.sponsors.svg
+          token: ${{ secrets.METRICS_TOKEN_PERSONAL }}
           base: ""
-          plugin_sponsorships: yes
+          plugin_sponsors: yes
+          plugin_sponsors_sections: goal, list
+          plugin_sponsors_past: yes
       - name: Full-year calendar
         uses: lowlighter/metrics@latest
         with:
@@ -40,17 +42,6 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_stargazers: yes
-      - name: stargazer worldmap
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.plugin.stargazers.worldmap.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_stargazers: yes
-          plugin_stargazers_charts: no
-          plugin_stargazers_worldmap: yes
-          plugin_stargazers_worldmap_token: ${{ secrets.METRICS_TOKEN }}
-          plugin_stargazers_worldmap_sample: 200
       - name: Indepth analysis
         uses: lowlighter/metrics@latest
         with:
