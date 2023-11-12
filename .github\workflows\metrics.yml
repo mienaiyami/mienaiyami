@@ -1,0 +1,19 @@
+name: Metrics
+on:
+  schedule: [{cron: "0 0 * * *"}]
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Contributors and sponsors
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.people.repository.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          template: repository
+          repo: yomikiru
+          plugin_people: yes
+          plugin_people_types: contributors, sponsors
